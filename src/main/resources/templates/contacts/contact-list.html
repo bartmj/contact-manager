@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyContacts</title>
+</head>
+<body>
+<div>
+    <h1 th:text="#{title}"></h1>
+    <h3 th:text="#{contactList}"></h3>
+    <div th:each="contact: ${contactsPage}">
+        Name: <span th:text="${contact.name}"/>, Phone: <span th:text="${contact.phone}"/>,
+    </div>
+    </br>
+    <li><a href="/index.html" th:text="#{mainPage}"></a></li>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyContacts</title>
+</head>
+<body>
+<div>
+    <h1 th:text="#{title}"></h1>
+    <h3 th:text="#{contactAdded}"></h3>
+    <div>
+        Name: <span th:text="${contact.name}"></span>
+        </br>
+        Phone: <span th:text="${contact.phone}"></span>
+    </div>
+    </br>
+    <li><a href="/" th:text="#{addContact}"></a></li>
+    <li><a href="/index.html" th:text="#{mainPage}"></a></li>
+</div>
+</body>
+</html>
